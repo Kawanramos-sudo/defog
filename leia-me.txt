@@ -1,0 +1,26 @@
+pasta projetos_json:
+Duplicar qualquer arquivo json e editar o novo, renomeie para o nome do projeto, edite o arquivo com a ordem das coisas que deseja.
+
+em /static/img_projetos
+salve a capa do projeto com exatamente o mesmo nome do arquivo .json
+vão ser aceitos os arquivos do tipo: ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.avif']
+
+em index.html:
+
+vai encontrar algo do tipo:
+
+    <div class="projeto-item">
+        <a href="/wyuka" class="projeto-link">
+            <img src="{{ url_for('static', filename='img_projetos/Wyuka.avif') }}" alt="Wyuka" class="projeto-img">
+
+        </a>
+    </div>
+
+Aqui é bem tranquilo, copie e cole embaixo em (<a href="/wyuka) vai colocar o nome do projeto, literalmente como estiver no json, claro, antes do ".json"
+
+em:
+            <img src="{{ url_for('static', filename='img_projetos/Wyuka.avif') }}" 
+
+vai indicar a foto.
+
+no mais é isso, boa sorte (y)

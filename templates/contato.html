@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="page-transition">
+{% include "header.html" %}
+
+<div class="contato-conteudo">
+    <div class="texto-intro">
+    <h2>Vamos conhecer seus desafios.</h2>
+
+    <p>Preencha o formulário para que possamos agendar um <br> horário e conversarmos sobre seu projeto.</p>
+</div>
+    <form action="/contato" method="post">
+        <label for="nome">Qual é o seu nome completo?</label><br>
+        <input type="text" id="nome" name="nome" required><br>
+
+        <label for="email">E o seu melhor e-mail?</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="whatsapp">Seu WhatsApp com DDD</label><br>
+        <input type="text" id="whatsapp" name="whatsapp" required><br>
+
+        <label for="empresa">Qual é o nome da sua empresa?</label><br>
+        <input type="text" id="empresa" name="empresa" required><br>
+
+<p>Quantos funcionários possui a sua empresa?</p>
+<label class="radio-label">
+    <input type="radio" name="tamanho_empresa" value="Profissional Liberal" required>
+    Profissional Liberal
+</label>
+<label class="radio-label">
+    <input type="radio" name="tamanho_empresa" value="Micro (2 a 10 funcionários)">
+    Micro (2 a 10 funcionários)
+</label>
+<label class="radio-label">
+    <input type="radio" name="tamanho_empresa" value="Média (50 a 100 funcionários)">
+    Média (50 a 100 funcionários)
+</label>
+<label class="radio-label">
+    <input type="radio" name="tamanho_empresa" value="Grande (mais de 100 funcionários)">
+    Grande (mais de 100 funcionários) <br>
+</label>
+<br> <!-- ou <div style="width: 100%;"></div> -->
+
+        <label for="instagram">Instagram da sua empresa? (se houver)</label><br>
+        <input type="text" id="instagram" name="instagram"><br>
+
+        <label for="segmento">Qual é o segmento da sua empresa?</label><br>
+        <input type="text" id="segmento" name="segmento" required><br>
+
+        <label for="produtos">Quais produtos ou serviços sua empresa oferece?</label><br>
+        <input type="text" id="produtos" name="produtos" required><br>
+
+        <label for="tempo_mercado">Há quanto tempo sua marca está no mercado?</label><br>
+        <input type="text" id="tempo_mercado" name="tempo_mercado" required><br>
+
+<p>Como você nos encontrou?</p>
+<label class="radio-label">
+    <input type="radio" name="origem" value="Google" required>
+    Google
+</label>
+<label class="radio-label">
+    <input type="radio" name="origem" value="Instagram">
+    Instagram
+</label>
+<label class="radio-label">
+    <input type="radio" name="origem" value="Indicação">
+    Indicação
+</label>
+<label class="radio-label">
+    <input type="radio" name="origem" value="Behance">
+    Behance
+</label>
+
+<br> <!-- ou <div style="width: 100%;"></div> -->
+
+
+        <label for="mensagem_extra">Há algo mais que queira nos contar? (opcional)</label><br>
+        <textarea id="mensagem_extra" name="mensagem_extra" rows="6"></textarea><br>
+
+<button type="submit" class="btn-contato">Enviar</button>
+{% if mensagem %}
+    <div class="alerta-feedback-site">
+        {{ mensagem }}
+    </div>
+{% endif %}
+
+    </form>
+</div>
+
+
+{% include "footer.html" %}
+
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </div>
+</body>
+</html>

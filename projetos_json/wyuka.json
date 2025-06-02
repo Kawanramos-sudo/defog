@@ -1,0 +1,23 @@
+{
+        "titulo": "Wyuka Design                       de Sobrancelhas",
+        "subtitulo": "Existe uma Diva no seu olhar.",
+        "local": "Rio de Janeiro",
+        "ano": "2019",
+        "descricao": "A marca Wyuka retrata a personalidade da jovem empreendedora Wyuka Ramos, uma talentosíssima Designer que devolve o brilho para suas clientes e seguidoras a cada dia. Seu serviço devolve a auto estima e beleza que a rotina ocultou,  trazendo assim cada vez mais alegria e vontade de viver para sua comunidade. ",
+        "blocos": [
+            { "tipo": "imagem", "src": "/static/projetos_pagina/wyuka/1.jpg", "alt": "Logo Wyuka" },
+            { "tipo": "texto", "titulo": "Conceito", "conteudo": "Wyuka" },
+
+            { "tipo": "texto2", "": "Conceito", "conteudo": "Local  •  Rio de Janeiro" },
+            { "tipo": "texto2", "": "Conceito", "conteudo": "2020" },
+
+
+            { "tipo": "texto2", "": "Conceito", "conteudo": "As sobrancelhas moldam nossos traços mais característicos no rosto, visto isso a tipografia desenvolvida para o nome da designer ressalta a estética feminina, sinuosidade e leveza, ao mesmo tempo em que contempla a forma de uma sobrancelha.   " },
+            { "tipo": "imagem", "src": "/static/projetos_pagina/wyuka/2.avif", "alt": "Logo Wyuka"}
+
+
+
+            
+
+    ]
+}

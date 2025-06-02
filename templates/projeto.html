@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defog Design</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+        <div class="page-transition">
+    {% include "header.html" %}
+
+    <div class="content">
+
+<div class="projeto-inicio">
+<div class="titulo-projeto">
+    <h1>{{ conteudo.titulo }}</h1>
+    <h2>{{ conteudo.subtitulo }}</h2>
+    <p> — —</p>
+    <p>Local  •  {{ conteudo.local }}  •  {{ conteudo.ano }}</p>
+    </div>
+    <div class="descricao-projeto">
+    <p>{{ conteudo.descricao }}</p>
+</div>
+</div>
+
+    {# Laço que percorre os blocos dinâmicos #}
+    {% for bloco in conteudo.blocos %}
+
+        {# Se o bloco for uma imagem #}
+        {% if bloco.tipo == 'imagem' %}
+            <div class="imagem">
+                <img src="{{ bloco.src }}" alt="{{ bloco.alt }}">
+            </div>
+        {% endif %}
+
+        {# Se o bloco for um texto #}
+        {% if bloco.tipo == 'texto' %}
+            <div class="texto">
+                <div class="titulo-projeto">
+                <h1>{{ bloco.titulo }}</h1>
+                
+                
+                <h2>{{ bloco.conteudo }}</h2>
+                </div>
+                <p>— —</p>
+            </div>
+        {% endif %}
+
+                {# Se o bloco for um texto #}
+        {% if bloco.tipo == 'texto2' %}
+            <div class="texto">
+                <p>{{ bloco.conteudo }}</p>
+            </div>
+        {% endif %}
+
+
+
+        {# Se o bloco for um vídeo #}
+        {% if bloco.tipo == 'video' %}
+<div class="video">
+    <video autoplay loop muted playsinline> <!-- Atributos opcionais para comportamento automático -->
+        <source src="{{ bloco.src }}" type="video/mp4">
+        Seu navegador não suporta vídeo.
+    </video>
+</div>
+        {% endif %}
+
+        {# Se o bloco for um gif #}
+        {% if bloco.tipo == 'gif' %}
+            <div class="gif">
+                <img src="{{ bloco.src }}" alt="{{ bloco.alt }}">
+            </div>
+        {% endif %}
+
+    {% endfor %}
+
+
+<div class="carrossel-container">
+    <p> Vá para o próximo projeto </p>
+    <button class="carrossel-seta carrossel-seta-esquerda">
+        <img src="{{ url_for('static', filename='img/esquerda.svg') }}" alt="Anterior">
+    </button>
+    <div class="carrossel">
+        {% for projeto in projetos %}
+        <div class="projeto">
+            <a href="{{ projeto.link }}">
+                <img src="{{ url_for('static', filename=projeto.imagem) }}" alt="{{ projeto.nome }}">
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+    <button class="carrossel-seta carrossel-seta-direita">
+        <img src="{{ url_for('static', filename='img/direita.svg') }}" alt="Próximo">
+    </button>
+    
+    <div class="carrossel-indicadores">
+        <!-- Os indicadores serão gerados pelo JavaScript -->
+    </div>
+
+
+
+</div>
+
+<div class="fim-projetos">
+
+
+<h3>Gostou do Projeto?</h3>
+
+        <a href="/contato"><button class="design-button">Comece seu Design</button></a>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+{% include "footer.html" %}
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</div>
+
+</body>
+</html>

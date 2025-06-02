@@ -1,0 +1,2317 @@
+@font-face {
+    font-family: 'Neue Hass';
+    src: url('../fonts/NHaasGroteskDSStd-55Rg.otf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'Neue Haas Display Roman';
+    src: url('../fonts/NeueHaasDisplayRoman.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: "Neue Haas Grotesk Display Pro 75 Bold";
+    src: url("https://db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.eot");
+    src: url("https://db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.svg#Neue Haas Grotesk Display Pro 75 Bold")format("svg");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #000000;
+    padding: 0px;
+}
+
+header {
+        padding-bottom: 0;
+    transition: max-height 0.6s ease, padding 0.6s ease;
+        max-height: 85px;
+    transition: max-height 0.6s ease, background 0.4s ease;
+    overflow: hidden;
+
+    background: #000000;
+    color: #fff;
+    padding: 20px 30px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 
+        0 1px 2px rgba(255, 255, 255, 0.2),
+        3px 0 4px rgba(255, 255, 255, 0.1),
+        -3px 0 4px rgba(255, 255, 255, 0.1);
+    width: 99.85%; /* Largura reduzida */
+    margin: 0 auto; /* Centraliza o bloco */
+}
+
+.topo {
+        transition: padding 0.4s ease, margin 0.4s ease;
+
+    width: 1290px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribui espaço entre logo e nav */
+}
+
+.logo {
+    margin-top: 3px;
+    height: 27px;
+    width: auto;
+}
+
+nav {
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 680x;
+    background: #000000;
+    transition: 
+        max-height 0.5s ease-out,
+        background 0.3s ease;
+    /* Remova a segunda declaração de transition */
+}
+
+nav a {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Neue Hass';
+    transition: color 0.3s ease; /* Adiciona transição suave */
+}
+
+nav a:hover {
+    color: #e3ffe5;
+}
+
+
+.content {
+                    caret-color: transparent; /* Oculta o cursor */
+
+    display: flex;
+        flex-direction: column; /* Organiza os itens em coluna */
+
+    width: 1290px;
+    margin: 0 auto; /* Isso centralizará horizontalmente */
+}
+
+/* Container flex para os projetos */
+.projetos-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para próxima linha */
+    gap: 20px;
+    width: 100%;
+}
+
+
+/* O resto do seu CSS permanece igual */
+section {
+    margin: 50px 0;
+    width: 100%;
+    margin-bottom: 70px;
+
+}
+
+section h2,p{
+
+
+    color:#ffffff
+}
+
+section h2{
+
+font-size: 40px;
+font-family: "Neue Haas Grotesk Display Pro 75 Bold";
+
+}
+
+section p{
+   font-family: "Neue Haas Display Roman";
+font-size: 20px;
+width: 695px;
+
+}
+
+.design-button {
+    margin-top: 30px;
+    /* Estilo normal */
+    background-color: #000000; /* Fundo escuro */
+    color: white; /* Letra branca */
+    border: 2px solid white; /* Outline branco */
+    padding: 12px 24px; /* Espaçamento interno */
+    font-size: 20px; /* Tamanho da fonte */
+    font-weight: 100; /* Peso da fonte */
+    border-radius: 4px; /* Bordas levemente arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: all 0.3s ease; /* Transição suave para o hover */
+    border-radius: 25px;
+       font-family: "Neue Haas Display Roman";
+}
+
+.design-button:hover {
+    /* Estilo ao passar o mouse */
+    background-color: white; /* Fundo branco */
+    color: #121212; /* Letra escura */
+    /* Mantém o outline branco (ou pode mudar se quiser) */
+    /* Efeito extra opcional: */
+    transform: translateY(-2px); /* Levanta levemente o botão */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.design-button:active {
+    transform: translateY(1px);
+}
+
+
+
+
+
+/* projetos */
+
+
+
+
+.projeto-item {
+    margin-top: 15px;
+    flex: 0 1 calc(50% - 10px); /* 2 colunas considerando o gap */
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.projeto-link {
+
+    text-decoration: none;
+    color: inherit;
+}
+
+.projeto-img {
+        border-radius: 15px;
+    width: 624px;
+    height: 460px; /* Altura fixa ou use 'aspect-ratio' */
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+
+
+/* Efeitos hover */
+.projeto-item:hover {
+    transform: scale(1.01);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* PROCESSOS */
+
+
+
+.processos {
+    margin: 120px auto 0; /* Topo: 100px | Laterais: auto (centraliza) | Fundo: 0 */
+    width: 90%;
+    max-width: 1100px; /* Opcional: define uma largura máxima */
+    color: white;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.processos h2 {
+    font-weight: 500; /* Peso da fonte */
+    font-size: 40px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Neue Haas Grotesk Display Pro 75 Bold";
+}
+
+.processo-item {
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative; /* Adicionado */
+
+}
+
+.processo-numero {
+    margin-right: 20px; /* Espaçamento ajustável */
+    font-weight: bold;
+    min-width: 30px; /* Garante alinhamento vertical */
+}
+
+.processo-texto {
+    flex: 1; /* Ocupa espaço restante */
+}
+
+
+.processo-cabecalho {
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+            font-family: "Neue Haas Grotesk Display Pro 75 Bold";
+        font-size: 34px;
+}
+
+.processo-seta {
+
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+
+.seta-linha {
+        margin-top: 5px;
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.6s ease;
+}
+
+.seta-linha:first-child {
+    transform: rotate(-45deg) translate(9px, 0px);
+}
+
+.seta-linha:last-child {
+    transform: rotate(45deg) translate(-9px, 0px);
+}
+
+.processo-linha {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin: 5px 0 15px; /* Ajuste a margem conforme necessário */
+    transition: all 0.3s ease;
+}
+
+
+.processo-conteudo {
+       font-family: "Neue Haas Display Roman";
+       font-size: 17px;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: all 0.5s ease;
+    width: 80%;
+}
+
+/* Estado expandido */
+.processo-item.ativo .processo-cabecalho {
+    transform: translateY(10px);
+}
+
+
+.processo-item.ativo .processo-linha {
+    transform: translateY(5px);
+}
+
+/* Mantenha as regras anteriores para a seta */
+.processo-item.ativo .seta-linha:first-child {
+    transform: rotate(45deg) translate(10px, 1px);
+}
+
+
+.processo-item.ativo .seta-linha:last-child {
+    transform: rotate(-45deg) translate(-10px, 1px);
+}
+
+.processo-item.ativo .processo-conteudo {
+    max-height: 300px;
+    /* Verticais */
+    padding-top: 15px;
+    padding-bottom: 0px;
+    
+    /* Horizontais */
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 5px; /* Espaço antes da linha */
+}
+
+
+
+
+
+
+
+
+
+
+/* Fernando */
+
+
+
+.Perfil {
+    display: flex; /* Coloca imagem e texto lado a lado */
+    gap: 15px; /* Espaço entre a imagem e o conteúdo */
+    width: 1290px; /* Largura fixa para todo o bloco */
+    padding: 10px;
+    border-radius: 8px;
+    
+    margin: 90px auto; /* Centraliza horizontalmente */
+
+}
+
+.projeto-img-perfil {
+    width: 465px; /* Tamanho menor da imagem */
+    height: 575px; /* Mantém proporção quadrada */
+    object-fit: cover;
+    border-radius: 2%; /* Deixa a imagem redonda */
+}
+
+.perfil-conteudo {
+    margin-top: 35px;
+    margin-left: 55px;
+    display: flex;
+    flex-direction: column; /* h7 em cima e p embaixo */
+}
+
+.perfil-conteudo h6 {
+    font-family: "Neue Haas Grotesk Display Pro 75 Bold";
+
+    color: white; /* ou qualquer outra cor */
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.perfil-conteudo p {
+    width: 680px;
+       font-family: "Neue Haas Display Roman";
+    font-size: 21px;
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+
+
+
+
+
+
+
+.final-pai {
+    display: flex;
+    margin: 0 auto; /* <-- Centraliza horizontalmente */
+    width: 1290px;
+    margin-bottom: 50px;
+}
+
+.final {
+    margin: 50px 0;
+}
+
+.final h6 {
+    font-family: "Neue Haas Grotesk Display Pro 75 Bold";
+    color: white;
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+.final p {
+    width: 100%; /* agora respeita a largura de .final */
+    font-family: "Neue Haas Display Roman";
+    font-size: 21px;
+    margin: 9px 0;
+}
+
+.design-button2 {
+    margin-top: 15px;
+    /* Estilo normal */
+    background-color: #000000; /* Fundo escuro */
+    color: white; /* Letra branca */
+    border: 2px solid white; /* Outline branco */
+    padding: 12px 24px; /* Espaçamento interno */
+    font-size: 20px; /* Tamanho da fonte */
+    font-weight: 100; /* Peso da fonte */
+    border-radius: 4px; /* Bordas levemente arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: all 0.3s ease; /* Transição suave para o hover */
+    border-radius: 25px;
+       font-family: "Neue Haas Display Roman";
+}
+
+.design-button2:hover {
+    /* Estilo ao passar o mouse */
+    background-color: white; /* Fundo branco */
+    color: #121212; /* Letra escura */
+    /* Mantém o outline branco (ou pode mudar se quiser) */
+    /* Efeito extra opcional: */
+    transform: translateY(-2px); /* Levanta levemente o botão */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.design-button2:active {
+    transform: translateY(1px);
+}
+
+
+
+
+
+
+
+.site-footer {
+  background-color: #000; /* Fundo preto */
+  height: 83px; /* Altura fixa */
+  border-top: 0.0000001px solid #fff; /* Linha branca no topo */
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+}
+
+.footer-content {
+  width: 95%; /* ou um valor fixo como 1200px, dependendo do seu layout */
+  max-width: 1290px; /* opcional - para limitar a largura máxima */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribui o espaço entre os elementos */
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  margin-right: auto; /* Empurra tudo para a direita */
+  padding-left: 0px; /* Espaço da "parede" */
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 35px; /* Espaço entre os elementos à direita */
+}
+
+.footer-img {
+  width: 60px;
+  height: auto; /* Mantém proporção */
+}
+
+.footer-text {
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.footer-text p {
+       font-family: "Neue Haas Display Roman";
+       font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  margin: 0; /* Remove margens padrão do parágrafo */
+}
+
+.footer-img-quadrada {
+  width: 40px;
+  height: 40px;
+  object-fit: cover; /* Mantém imagem ajustada ao quadrado */
+}
+
+.footer-img-quadrada2 {
+  width: 40px;
+  height: 40px;
+  object-fit: cover; /* Mantém imagem ajustada ao quadrado */
+}
+
+
+@media (max-width: 1290px) {
+.content {
+    width: 90%;
+
+
+}
+   }
+
+nav {
+
+    width: 889px;
+
+}
+
+
+@media (max-width: 1024px) {
+    .topo, .content, .Perfil {
+        width: 90%;
+        max-width: 100%;
+    }
+
+.final-pai{
+
+width: 78.9%;
+
+}
+
+    .projeto-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .perfil-conteudo p {
+        width: 90%;
+
+
+    }
+    .projeto-img-perfil{
+
+    width: 90%;
+    height: 88%;
+
+    }
+.footer-text {
+    display: none;
+}
+
+
+
+.footer-img-quadrada2 {
+  display: none;
+}
+
+}
+
+@media (max-width: 1100px) {
+
+    .projeto-img-perfil{
+
+    width: 250px;
+    height: 320px;
+    margin-left: 42px;
+    }
+
+
+
+.perfil-conteudo p {
+    width: 600px;
+       font-family: "Neue Haas Display Roman";
+    font-size: 14px;
+    margin-top: 0px;
+
+}
+
+.perfil-conteudo{
+
+
+    margin-top: 0;
+}
+
+.Perfil {
+    display: flex; /* Coloca imagem e texto lado a lado */
+    gap: 15px; /* Espaço entre a imagem e o conteúdo */
+    width: 1290px; /* Largura fixa para todo o bloco */
+    padding: 10px;
+    border-radius: 8px;
+
+    margin: 20px 0; /* Centraliza horizontalmente */
+
+}
+
+
+.final{
+
+    margin-left: 50px;
+}
+
+
+nav {
+
+    width: 1200px;
+
+}
+
+
+
+}
+
+
+
+
+@media (max-width: 960px) {
+
+
+.perfil-conteudo p {
+    width: 500px;
+       font-family: "Neue Haas Display Roman";
+    font-size: 20px;
+    margin-top: 0px;
+
+}
+
+.final{
+
+    margin-left: 0px;
+}
+
+
+
+
+}
+
+
+/* ======== TABLET (768px - 1024px) ======== */
+@media (max-width: 1290px) {
+    .topo, .content, .Perfil, .final-pai {
+        width: 98%;
+        max-width: 98%;
+    }
+
+    .projeto-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .perfil-conteudo p {
+        width: 90%;
+    }
+
+
+
+.final-pai {
+    display: flex;
+    margin: 0 0px; /* <-- Centraliza horizontalmente */
+    width: 1000px;
+    margin-bottom: 50px;
+    max-width: 1000px;
+}
+
+.final {
+    width: 95%;
+    margin: 50px 20px;
+}
+
+.final h6 {
+    font-family: "Neue Haas Grotesk Display Pro 75 Bold";
+    color: white;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.final p {
+    width: 100%; /* agora respeita a largura de .final */
+    font-family: "Neue Haas Display Roman";
+    font-size: 18px;
+    margin: 9px 0;
+}
+
+
+
+
+}
+
+@media (max-width: 1024px) {
+    nav a {
+        font-size: 18px;
+        padding: 8px;
+    }
+    
+    .projeto-item {
+        flex: 0 1 100%;
+    }
+    
+    .Perfil {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .perfil-conteudo {
+        margin-left: 0;
+        align-items: center;
+    }
+    
+    .processos {
+        width: 95%;
+    }
+
+
+
+
+
+
+    
+}
+
+
+
+/* ======== MOBILE (até 768px) ======== */
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 15px;
+        width: 100%;
+    }
+
+    .content {
+    width: 86%;
+
+
+}
+    
+    .projeto-img-perfil {
+        margin: 0;
+
+
+    }
+
+    .topo {
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+
+    
+    section h2 {
+        font-size: 32px;
+    }
+    
+    section p {
+        width: 100%;
+        font-size: 18px;
+    }
+    
+    .projeto-img {
+        height: 350px;
+    }
+    
+    .processo-cabecalho {
+        font-size: 28px;
+    }
+    
+    .processo-conteudo {
+        width: 100%;
+        font-size: 16px;
+    }
+    
+    .footer-content {
+          max-width: 400px; /* opcional - para limitar a largura máxima */
+        gap: 0px;
+    }
+    
+    .footer-left {
+        margin-right: 0;
+    }
+}
+
+/* ======== SMALL MOBILE (até 480px) ======== */
+@media (max-width: 480px) {
+    nav a {
+        font-size: 16px;
+    }
+    
+    .projeto-img {
+        height: 250px;
+    }
+    
+    .projeto-img-perfil {
+        margin: 0;
+
+        width: 95%;
+        height: 80%;
+    }
+    
+    .design-button, 
+    .design-button2 {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+    
+    .processo-cabecalho {
+        font-size: 24px;
+    }
+    
+    .footer-right {
+        gap: 20px;
+    }
+    
+    .footer-img-quadrada {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+
+/* --- HAMBURGER MENU STYLES --- */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    padding: 0;
+    margin-left: auto;
+}
+
+.hamburger span {
+    display: block;
+    height: 4px;
+    width: 85%;
+    background: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Menu expandido */
+nav.expanded {
+    background: #0e0e0e; /* Cor final quando expandido */
+    border-radius: 8px;
+    overflow: hidden;
+    max-height: 500px;
+
+}
+
+nav.expanded a {
+    display: block;
+    font-size: 18px;
+        text-align: left; /* Adicione esta linha */
+            opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlideIn 0.5s forwards;
+
+}
+
+/* Animação para os links */
+@keyframes fadeSlideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Atrasos diferentes para cada item para efeito em cascata */
+nav.expanded a:nth-child(1) {
+    animation-delay: 0.1s;
+}
+nav.expanded a:nth-child(2) {
+    animation-delay: 0.2s;
+}
+nav.expanded a:nth-child(3) {
+    animation-delay: 0.3s;
+}
+nav.expanded a:nth-child(4) {
+    animation-delay: 0.4s;
+}
+nav.expanded a:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+
+.menu-links a {
+  white-space: nowrap;
+}
+
+.menu-links {
+    display: flex;
+    gap: 30px;
+    margin-left: auto; /* empurra o menu pro lado oposto dentro do flex container */
+}
+
+nav.expanded .menu-links {
+    text-align: left;
+    width: 100%;
+}
+
+nav.expanded a:last-child {
+    border-bottom: none;
+}
+
+/* Animação do hamburger para X */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+header.menu-expanded .logo-hamburger {
+    transform: translateY(-10px); /* Ajuste conforme preferir */
+}
+
+
+.logo-hamburger {
+    margin-top: 5px;
+        transition: transform 0.4s ease;
+
+    display: flex;
+    justify-content: space-between; /* distribui espaço entre os itens */
+    align-items: center; /* centraliza verticalmente */
+    width:  100%; /* ocupa toda a largura disponível */
+}
+
+/* Media Queries para Mobile */
+@media (max-width: 768px) {
+
+
+    .menu-links {
+        display: flex;
+        flex-direction: column; /* Fica um embaixo do outro */
+        gap: 15px;
+        margin-left: 0; /* Remove o "empurrar para o lado" no mobile */
+        width: 100%;
+    }
+
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    nav:not(.expanded) {
+        display: none;
+    }
+
+        .logo-hamburger {
+        display: flex;
+        width: 80%;
+    }
+
+        header.menu-expanded {
+            
+                max-height: 400px; /* Ajuste com base no tamanho necessário para o menu */
+
+                padding-bottom: 20px; /* ou ajuste como preferir */
+
+        background: #0e0e0e !important; /* Mesma cor do menu */
+        transition: background 0.6s ease; /* Transição suave */
+    }
+    
+    .topo {
+                width: 100%;
+        flex-wrap: wrap;
+                flex-direction: column; /* empilha verticalmente */
+
+    }
+    
+    nav {
+            opacity: 0;
+    transition: opacity 0.6s ease, max-height 0.6s ease;
+        flex-direction: column; /* Itens em coluna no mobile */
+        align-items: flex-start; /* Alinhar à esquerda */
+        gap: 15px; /* Espaçamento menor */
+        width: 100%; /* Largura total */
+        padding: 0 20px; /* Padding lateral */
+        
+    }
+    
+    nav.expanded {
+    opacity: 1;
+
+            max-height: 500px; /* Altura suficiente para conter os links */
+}
+
+
+
+    header {
+        height: auto;
+        padding: 28px 0px;
+    }
+}
+
+@media (min-width: 769px) {
+    nav {
+        max-height: none !important;
+        overflow: visible !important;
+    }
+
+
+    nav.expanded {
+        display: flex !important;
+        background: transparent !important;
+        padding: 0;
+        margin-top: 0;
+        box-shadow: none;
+            max-height: 500px; /* Ajuste conforme o tamanho real do seu menu */
+    overflow: hidden; /* Mantém o conteúdo oculto enquanto expande */
+    }
+    
+    nav.expanded a {
+        border-bottom: none;
+        padding: 10px;
+    }
+}
+
+
+
+
+.contato-conteudo {
+    width: 1080px; /* ou o tamanho que preferir, ex: 600px, 700px */
+    margin: 55px auto; /* centraliza horizontalmente */
+    padding: 20px; /* opcional, dá um respiro interno */
+}
+
+
+.contato-conteudo h2{
+    caret-color: transparent; /* Oculta o cursor */
+color:#fff;
+font-family: "Neue Haas Grotesk Display Pro 75 Bold";
+font-size: 34px;
+
+
+}
+
+
+
+
+.contato-conteudo p {
+   font-family: "Neue Haas Display Roman";
+   font-size: 20px;
+       caret-color: transparent; /* Oculta o cursor */
+}
+
+.contato-conteudo form{
+    
+    margin-top: 50px;
+ color:#fff;
+    font-family: "Neue Haas Display Roman";
+font-size: 15px;
+}
+
+.contato-conteudo form p{
+   margin-top: 22px;
+   margin-bottom: 15px;
+    font-family: "Neue Haas Display Roman";
+font-size: 15px;
+
+    caret-color: transparent; /* Oculta o cursor */
+}
+
+form label {
+        caret-color: transparent; /* Oculta o cursor */
+    margin-bottom: 0px;
+}
+
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    
+    margin-top: 5px;
+    height: 40px;
+    width: 100%;
+    padding: 10px; /* <-- Adiciona espaço interno de 10px em todos os lados */
+
+    margin-bottom: 12px;
+    border: 1px solid #1b1b1b;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #181818; /* cinza escuro */
+    color: #fff; /* texto branco para contraste */
+    outline: none; /* remove o outline padrão */
+    transition: box-shadow 0.3s ease, border-color 0.3s ease; /* suaviza a animação */
+
+
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #fff; /* borda branca */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* brilho branco */
+    outline: none; /* garantir que não apareça o contorno padrão */
+}
+
+
+textarea {
+
+    resize: none; /* impede redimensionamento */
+    height: 120px; /* define uma altura fixa */
+}
+
+button.btn-contato {
+    font-weight: bold;
+    font-size: 14px;
+    height: 38px;
+    width: 100%;
+    background-color: #c9e0de;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+
+    /* Transição suave */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-contato:hover {
+    color: #fff;
+    background-color: rgb(255, 169, 39);
+}
+
+
+.radio-label {
+    display: inline-flex; /* Faz os itens ficarem lado a lado */
+    align-items: center;
+    margin-top: 5px;
+    margin-right: 61px; /* Espaçamento entre as opções */
+    margin-bottom: 38px; /* Pequeno espaço abaixo, caso haja quebra de linha */
+}
+
+
+.radio-label input[type="radio"] {
+    background-color: rgb(37, 37, 37);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgb(61, 61, 61);
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.radio-label input[type="radio"]:checked {
+    
+    background-color: rgb(255, 169, 39);
+}
+
+.radio-label input[type="radio"]:checked::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 6px;  /* Tamanho ajustável */
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+}
+
+
+
+@media (max-width: 1082px) {
+
+.contato-conteudo{
+
+    width: 80%;
+}
+
+
+}
+
+@media (max-width: 768px) {
+
+    .contato-conteudo {
+        width: 90%; /* ou 95% para mais respiro */
+        margin: 30px auto;
+        padding: 0px;
+    }
+
+
+  .contato-conteudo br {
+    display: none; /* Esconde os <br> que estão no HTML */
+  }
+
+  .contato-conteudo h2 {
+    margin-bottom: 55px;
+    font-size: 34px;
+    caret-color: transparent;
+    color: transparent; /* Oculta o texto original */
+    font-family: "Neue Haas Grotesk Display Pro 75 Bold";
+    position: relative;
+  }
+
+  .contato-conteudo h2::before {
+    content: "Vamos conhecer seus\A desafios.";
+    white-space: pre;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .texto-intro p {
+    margin-bottom: 65px;
+    font-family: "Neue Haas Display Roman";
+    font-size: 20px;
+    caret-color: transparent;
+    color: transparent; /* Oculta o texto original */
+    position: relative;
+  }
+
+  .texto-intro p::before {
+    content: "Preencha o formulário para que\A possamos agendar um horário e\A conversarmos sobre seu projeto.";
+    white-space: pre;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+
+
+    .contato-conteudo form {
+        margin-top: 30px;
+        font-size: 14px;
+    }
+
+    form label {
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        font-size: 14px;
+        padding: 8px;
+        height: auto; /* ajusta altura automática */
+    }
+
+    textarea {
+        height: 100px; /* reduz um pouco a altura */
+    }
+
+    .radio-label {
+        display: flex; /* cada opção em uma linha */
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+
+    .radio-label input[type="radio"] {
+        width: 14px;
+        height: 14px;
+        margin-right: 8px;
+    }
+
+    button.btn-contato {
+        font-size: 14px;
+        height: 40px;
+        padding: 10px;
+    }
+}
+@media (max-width: 600px) {
+
+  .contato-conteudo h2 {
+    font-size: 30px;
+    caret-color: transparent;
+    color: transparent; /* Oculta o texto original */
+    font-family: "Neue Haas Grotesk Display Pro 75 Bold";
+    position: relative;
+    margin-bottom: 0px;
+  }
+
+      .texto-intro p {
+   font-size: 18px;
+    margin-bottom: 80px;
+  }
+
+}
+
+
+@media (width: 600px) {
+
+  .contato-conteudo h2 {
+
+    margin-bottom: 60px;
+  }
+
+}
+
+@media (min-width: 536px) and (max-width: 600px) {
+  .contato-conteudo h2 {
+    margin-bottom: 58px;
+  }
+}
+
+
+
+
+.Depoimentos-pai {
+  display: flex;
+  flex-direction: column; /* Depoimentos em cima */
+  align-items: center;
+  color: white; /* Deixa o h1 branco */
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.Depoimento {
+    margin-bottom: 30px;
+  display: flex; /* Para alinhar imagem e texto lado a lado */
+  gap: 20px; /* Espaço entre a imagem e o texto */
+  margin-top: 20px;
+  align-items: flex-start; /* Alinha h2 no topo da imagem */
+  width: 100%; /* Garante que a estrutura ocupe toda a linha */
+  max-width: 1300px; /* Opcional: para limitar no desktop */
+}
+
+.depoimento-img {
+  width: 465px;
+          caret-color: transparent; /* Oculta o cursor */
+
+  height: 575px; /* ou outro valor que funcione bem no layout */
+  border-radius: 10px;
+  object-fit: cover; /* Mantém proporção e corta o excesso */
+  flex-shrink: 0; /* Impede de encolher */
+}
+
+
+.descricao {
+  margin-top: 55px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column; /* h2 em cima, p embaixo */
+  flex: 1; /* Faz o bloco de texto ocupar todo o espaço restante */
+  max-width: 700px; /* Se quiser limitar */
+}
+.Depoimentos-titulo {
+            caret-color: transparent; /* Oculta o cursor */
+
+    font-size: 20px;
+    font-family: "Neue Haas Grotesk Display Pro 75 Bold";
+
+    margin-top: 100px;
+  align-self: flex-start; /* Se o container for flex */
+  width: 100%; /* Faz a div pegar toda a largura */
+  text-align: left; /* Garante que o conteúdo fique à esquerda */
+  margin-bottom: 50px;
+}
+
+
+.Depoimentos-pai h2 {
+    font-size: 40px;
+            caret-color: transparent; /* Oculta o cursor */
+
+    font-family: "Neue Haas Grotesk Display Pro 75 Bold";
+
+  margin: 0 0 10px 0; /* Tira espaço extra e separa do parágrafo */
+}
+
+.Depoimento p {
+            caret-color: transparent; /* Oculta o cursor */
+
+  font-size: 20px;
+  font-weight: 530;
+  font-family: "Neue Haas Display Roman";
+  max-width: 620px; /* ou outro valor para controlar, ex: 500px */
+}
+
+
+.final-prova-pai {
+    margin: 100px auto;
+  width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px; /* Espaço entre as colunas */
+  flex-wrap: wrap; /* Para ficar responsivo em telas pequenas */
+}
+
+.final-prova {
+                caret-color: transparent; /* Oculta o cursor */
+  flex: 1;
+}
+
+.final-prova h6 {
+                caret-color: transparent; /* Oculta o cursor */
+        font-family: "Neue Haas Grotesk Display Pro 75 Bold";
+    color:#fff;
+  font-size: 40px;
+  margin-bottom: 10px;
+    line-height: 1.15; /* ou tente 1.2, até achar o ideal */
+
+}
+
+.final-prova p {
+                caret-color: transparent; /* Oculta o cursor */
+    font-size: 20px;
+          font-family: "Neue Haas Display Roman";
+  margin-bottom: 15px;
+}
+.final-prova-direita {
+                caret-color: transparent; /* Oculta o cursor */
+  flex: 1;
+  text-align: center;
+}
+
+.final-prova-direita img {
+                caret-color: transparent; /* Oculta o cursor */
+  max-width: 38%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.final-prova-direita p {
+                caret-color: transparent; /* Oculta o cursor */
+      font-family: "Neue Haas Display Roman";
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+
+@media (max-width: 768px) {
+
+    .perfil-conteudo h6 {
+        margin-bottom: 5px;
+font-size: 35px;
+           }
+
+    .Depoimento p {
+
+        font-size: 17px;
+
+          }
+
+  .Depoimentos-pai {
+    width: 75%;
+    padding: 0 0px;
+  }
+
+  .Depoimento {
+    flex-direction: column; /* Empilha a imagem e o texto */
+    align-items: center;
+    gap: 15px;
+  }
+
+  .depoimento-img {
+    width: 100%;
+    height: auto; /* Mantém proporção */
+    max-height: 400px; /* Limita altura para não esticar demais */
+  }
+
+  .descricao {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .Depoimentos-titulo {
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+
+  .final-prova-pai {
+    flex-direction: column; /* Empilha os dois blocos */
+    width: 90%;
+    gap: 30px;
+  }
+
+  .descricao h2{
+   font-size: 35px;
+
+        line-height: 1.15; /* ou tente 1.2, até achar o ideal */
+
+  }
+
+  .final-prova h6 {
+    font-size: 28px;
+  }
+
+  .final-prova p {
+    font-size: 16px;
+  }
+
+  .final-prova-direita img {
+ display: none;
+  }
+
+  .final-prova-direita p {
+display: none;
+  }
+
+}
+
+
+@media (min-width: 640px) and (max-width: 768px) {
+  .depoimento-img {
+    width: 90%;
+    height: auto; /* Mantém proporção */
+    max-height: 500px; /* Limita altura para não esticar demais */
+  }
+}
+
+
+
+@media (min-width: 769px) and (max-width: 932px) {
+
+.descricao p {
+
+
+    font-size: 17px;
+}    
+
+
+  .descricao h2{
+   font-size: 35px;
+
+        line-height: 1.15; /* ou tente 1.2, até achar o ideal */
+
+  }
+
+.descricao{
+
+
+            margin-top: 0px;
+}
+
+
+  }
+
+
+
+
+  @media (width: 912px){
+
+.descricao p{
+
+
+    font-size: 20px;
+}
+      }
+
+@media (min-width: 771px) and (max-width: 1292px) {
+
+
+
+
+
+    .final-prova-pai{
+
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .descricao{
+
+
+        margin-right: 20px;
+    }
+
+.Depoimentos-titulo h1{
+
+
+    margin-left: 20px;
+}
+
+
+  .depoimento-img {
+    margin-left: 20px;
+    width: 40%;
+    height: auto; /* Mantém proporção */
+    max-height: 790px; /* Limita altura para não esticar demais */
+  }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+html, body {
+  overflow-x: hidden;
+}
+
+
+.page-transition {
+      overflow-x: hidden;
+
+    animation: scaleIn 0.3s ease forwards;
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(1.04);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media (min-width: 468px) and (max-width: 542px) {
+
+
+.texto-intro h2{
+
+
+
+    margin-bottom: 55px;
+}
+
+    }
+
+@media (min-width:  483px) and (max-width: 1024px) {
+    .projeto-img-perfil{
+margin: 0 auto;
+width: 87%;
+height: 100%;
+
+    }
+
+      }
+
+
+
+.projeto-inicio {
+    margin-bottom: 80px;
+    margin-top: 80px;
+    color: #fff;
+    display: flex; /* Ativa Flexbox */
+    gap: 40px; /* Espaço entre as colunas (ajuste conforme necessário) */
+    align-items: flex-start; /* Alinha os itens ao topo */
+}
+
+.titulo-projeto {
+    width: 310px; /* Largura fixa para o título */
+    flex-shrink: 0; /* Impede que diminua */
+}
+
+.descricao-projeto {
+    margin-left: 340px;
+    margin-top:  75px;
+        font-size: 20px;
+    font-family: "Neue Haas Display Roman";
+    max-width: 6800px; /* Opcional: define uma largura máxima */
+}
+
+/* Mantenha o resto do seu CSS atual */
+.titulo-projeto h1 {
+    color:rgb(255, 255, 255);
+    white-space: pre-wrap;
+    line-height: 1.2;
+    font-size: 40px;
+    font-family: "Neue Haas Grotesk Display Pro 75 Bold";
+}
+
+.titulo-projeto h2 {
+    color:rgb(255, 255, 255);
+    margin-top: 10px;
+    white-space: pre-wrap;
+    font-weight: 100;
+    font-size: 20px;
+    font-family: "Neue Haas Display Roman";
+}
+
+.titulo-projeto p {
+    margin-top: 15px;
+    white-space: pre-wrap;
+    font-weight: 100;
+    font-size: 20px;
+    font-family: "Neue Haas Display Roman";
+}
+
+
+.imagem{
+
+
+    margin-top: 65px;
+}
+
+.imagem img {
+margin: 0 auto;
+    width: 1290px;
+
+border-radius: 10px;
+}
+
+.texto p{
+   width: 1050px;
+    font-weight: 100;
+    font-size: 20px;
+    font-family: "Neue Haas Display Roman";
+}
+
+.texto {
+
+   
+    margin-top: 20px;
+}
+
+.video {
+    max-width: 1290px; /* Usar max-width em vez de width para ser responsivo */
+    width: 100%; /* Ocupa 100% do espaço disponível (até 1290px) */
+    margin: 65px auto 0; /* margin-top: 65px + centralizado horizontalmente */
+    border-radius: 10px;
+    overflow: hidden; /* Garante que o border-radius funcione no vídeo */
+    margin-bottom: 20px;
+}
+
+.video video {
+    width: 100%; /* O vídeo preenche todo o container .video */
+    height: auto; /* Mantém a proporção */
+    display: block; /* Remove espaços extras abaixo do vídeo */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carrossel-container {
+        text-align: center; /* Adicione esta linha */
+        align-items: center; /* Centraliza horizontalmente tudo dentro do container */
+
+    position: relative;
+    max-width: 100%;
+    padding: 20px 40px; /* Espaço para as setas */
+    margin: 40px auto;
+}
+
+.carrossel {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+ overflow-x: hidden; /* Removemos a barra de rolagem */
+
+}
+
+.projeto {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    width: 220px;
+    height: 200px;
+    transition: transform 0.3s ease;
+}
+
+.projeto a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.projeto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.projeto img:hover {
+    transform: scale(1.05);
+}
+
+/* Setas de navegação */
+.carrossel-seta {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 32px;
+    background: rgba(0, 0, 0, 0.295);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2; /* Aumente o z-index para garantir que fique acima do carrossel */
+    transition: background 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.carrossel-seta:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carrossel-seta:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.carrossel-seta-esquerda {
+    left: 30px; /* Ajuste este valor para mover para a direita */
+}
+
+.carrossel-seta-direita {
+    right: 30px; /* Ajuste este valor para mover para a esquerda */
+}
+
+
+
+/* Indicadores */
+/* Mantenha os estilos anteriores e adicione: */
+.carrossel-indicadores {
+    position: absolute;
+    left: 50%;
+    bottom: 30px; /* Ajuste este valor para subir/descer os indicadores */
+    transform: translateX(-50%);
+    display: inline-flex;
+    gap: 8px;
+    padding: 8px 12px;
+    background-color: rgba(0, 0, 0, 0.582);
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.carrossel-indicador {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; /* 50% para círculo perfeito */
+    border: none;
+    background-color: #8585855e;
+    cursor: pointer;
+    transition: all 0.3s; /* Transição para todas as propriedades */
+    padding: 0;
+    flex-shrink: 0; /* Impede que os círculos encolham */
+}
+
+.carrossel-indicador.ativo {
+    background-color: #fff;
+    transform: scale(1.2); /* Efeito de destaque */
+}
+
+
+.carrossel-container p{
+    margin-bottom: 25px;
+        font-weight: 200;
+    font-size: 20px;
+    font-family: "Neue Haas Display Roman";
+    color:#fff
+}
+
+.fim-projetos {
+    margin-bottom: 70px;
+    text-align: center; /* Alinha tudo dentro da div ao centro */
+    padding: 20px; /* Opcional: espaço interno */
+}
+
+.fim-projetos h3 {
+    font-family: "Neue Haas Grotesk Display Pro 75 Bold";
+    font-size: 34px;
+    color: #ffffff; /* Cor branca */
+}
+
+.fim-projetos button {
+    margin-top: 15px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 1) Telas menores que 1200px (ex.: laptops grandes) */
+@media (max-width: 1200px) {
+    /* Diminui o gap do .projeto-inicio e ajusta margens */
+    .projeto-inicio {
+        gap: 20px;
+    }
+
+    .descricao-projeto {
+        margin-left: 260px; /* Reduz o deslocamento lateral */
+        margin-top: 60px;
+        font-size: 18px;
+    }
+
+    .titulo-projeto {
+        width: 260px;
+    }
+
+    .imagem img {
+        width: 100%; /* Limita à largura disponível */
+        max-width: 1100px;
+    }
+
+    .texto p {
+        width: 100%;
+        max-width: 900px;
+        font-size: 18px;
+    }
+
+    .video {
+        max-width: 1100px;
+    }
+
+    /* Ajuste do carrossel: reduz tamanho dos itens */
+    .projeto {
+        width: 200px;
+        height: 180px;
+    }
+}
+
+/* 2) Telas menores que 992px (tablets paisagem e alguns notebooks) */
+@media (max-width: 992px) {
+
+
+    .perfil-conteudo p{
+
+
+        font-size: 20px;
+    }
+
+    /* Empilha .projeto-inicio para coluna */
+    .projeto-inicio {
+        flex-direction: column;
+        margin-bottom: 50px;
+
+    }
+
+    .titulo-projeto {
+        width: 45%;
+        flex-shrink: 0;
+        margin-bottom: 20px;
+    }
+
+    .titulo-projeto h1 {
+        font-size: 32px;
+    }
+
+    .titulo-projeto h2,
+    .titulo-projeto p {
+        font-size: 18px;
+    }
+
+    .descricao-projeto {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .imagem {
+        margin-top: 40px;
+    }
+
+    .imagem img {
+        width: 90%;
+        max-width: 1000px;
+    }
+
+    .texto p {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .video {
+        max-width: 100%;
+    }
+
+    .carrossel {
+        gap: 15px;
+    }
+
+    .projeto {
+        width: 180px;
+        height: 160px;
+    }
+
+    .carrossel-seta {
+        width: 28px;
+        height: 30px;
+    }
+
+.projeto-inicio, .imagem, .texto, .video, .carrossel-container, .fim-projetos {
+
+margin-left: 100px;
+margin-right: 100px;
+
+}
+
+
+
+
+
+
+
+}
+
+/* 3) Telas menores que 768px (tablets em modo retrato e smartphones grandes) */
+@media (max-width: 768px) {
+
+    .projeto-inicio, .imagem, .texto, .video, .carrossel-container, .fim-projetos {
+
+margin-left: 0px;
+margin-right: 0px;
+
+}
+
+
+.titulo-projeto{
+
+    width: 95%;
+}
+    /* Layout de coluna para quase tudo */
+    /* Isso garante que cada .projeto “empilhe” e tome 100% */
+    .projeto {
+        width: 100%;
+        height: 100%;
+        /* Ou simplesmente: width: 100%;  */
+    }
+
+.carrossel {
+  overflow-x: auto;   /* Mantém a rolagem */
+  padding: 0;
+  height: 160px;
+
+  -ms-overflow-style: none;  /* Internet Explorer e Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.carrossel::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari e Opera */
+}
+    .projeto-inicio {
+        flex-direction: column;
+
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+        .projeto img {
+        /* Ajustando um pouco o espaçamento interno */
+       margin-left: 10px;
+        margin-right: 10px;
+        object-fit: cover;
+        width: 180px;
+        height: 150px;
+    }
+
+    .titulo-projeto {
+        width: 50%;
+    }
+
+    .titulo-projeto h1 {
+        font-size: 28px;
+    }
+
+    .titulo-projeto h2,
+    .titulo-projeto p {
+        font-size: 16px;
+    }
+
+    .descricao-projeto {
+        margin-left: 0;
+        margin-top: 15px;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .imagem img {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .texto p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .video {
+        margin-top: 40px;
+        max-width: 100%;
+    }
+
+    /* Carrossel: itens menores e setas mais discretas */
+    .projeto {
+        width: 140px;
+        height: 160px;
+    }
+ 
+
+    .carrossel-container{
+        padding: 0;
+    }
+
+    .carrossel-seta {
+        width: 24px;
+        height: 26px;
+        top: 55%;
+    }
+
+    .carrossel-seta-esquerda {
+        left: 10px;
+    }
+
+    .carrossel-seta-direita {
+        right: 10px;
+    }
+
+    .carrossel-indicadores {
+        bottom: 20px;
+        gap: 6px;
+        padding: 6px 10px;
+    }
+
+    .carrossel-indicador {
+        width: 8px;
+        height: 8px;
+    }
+
+    .carrossel-container p {
+        font-size: 18px;
+    }
+
+    .fim-projetos h3 {
+        font-size: 28px;
+    }
+
+    .fim-projetos {
+        margin-bottom: 100px;
+    }
+}
+
+/* 4) Telas menores que 480px (smartphones) */
+@media (max-width: 480px) {
+
+.projeto-inicio, .imagem, .texto, .video, .carrossel-container, .fim-projetos {
+
+margin-left: 0px;
+margin-right: 0px;
+
+}
+
+
+.titulo-projeto{
+
+    width: 95%;
+}
+
+    .projeto-inicio {
+        margin-top: 80px;
+        margin-bottom: 10px;
+    }
+
+    .titulo-projeto h1 {
+        font-size: 43px;
+        line-height: 1.2;
+    }
+
+    .titulo-projeto h2,
+    .titulo-projeto p {
+        font-size: 20px;
+    }
+
+    .descricao-projeto {
+        font-size: 20px;
+        margin-top: 10px;
+        width: 100%;
+        padding: 0 0px;
+    }
+
+    .imagem img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .texto p {
+        font-size: 20px;
+        width: 100%;
+        padding: 0 0px;
+    }
+
+    .video {
+        margin-top: 30px;
+        max-width: 100%;
+    }
+
+    .projeto {
+        width: 120px;
+        height: 100px;
+    }
+
+    .carrossel-seta {
+        display: none; /* Esconde as setas para ganhar espaço */
+    }
+
+    .carrossel-indicadores {
+        bottom: 15px;
+    }
+
+    .fim-projetos h3 {
+        font-size: 24px;
+    }
+
+    .fim-projetos button {
+        font-size: 20px;
+        padding: 8px 12px;
+    }
+}
+
+.alerta-feedback-site {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #0d1416, #262c35);
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    z-index: 9999;
+    animation: fadeInOut 4s ease forwards;
+}
+
+/* Animação: aparece, espera, e some */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    10% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+        <div class="page-transition">
+
+
+{% include "header.html" %}
+
+<div class="projetos-container">
+    <div class="Depoimentos-pai">
+    <div class="Depoimentos-titulo">
+     <h1>Depoimentos</h1>
+</div>
+    
+<div class="Depoimento">
+<img src="{{ url_for('static', filename='img_prova_social/wyuka.avif') }}" alt="Wyuka" class="depoimento-img">
+<div class="descricao">
+<h2>Wyuka Ramos. Empresária</h2>
+<p>A experiência da criação da minha identidade visual com o Fernando foi a mais satisfatória possível. Ele conseguiu, de uma forma objetiva e muito criativa, atingir minhas expectativas neste projeto. Sem contar o quanto o mesmo é um excelente profissional, ético e pontual no que faz. Sou extremamente grata pela realização deste projeto que , sem sombra de dúvidas, ficou exatamente a cara do meu negócio. Obrigado Fernando.</p>
+</div>
+</div>
+
+    
+
+<div class="Depoimento">
+<img src="{{ url_for('static', filename='img_prova_social/wyuka.avif') }}" alt="Wyuka" class="depoimento-img">
+<div class="descricao">
+<h2>Wyuka Ramos. Empresária</h2>
+<p>A experiência da criação da minha identidade visual com o Fernando foi a mais satisfatória possível. Ele conseguiu, de uma forma objetiva e muito criativa, atingir minhas expectativas neste projeto. Sem contar o quanto o mesmo é um excelente profissional, ético e pontual no que faz. Sou extremamente grata pela realização deste projeto que , sem sombra de dúvidas, ficou exatamente a cara do meu negócio. Obrigado Fernando.</p>
+</div>
+</div>
+
+
+
+
+
+
+</div> 
+</div>
+
+
+
+
+
+<div class="projetos-container">
+<div class="final-prova-pai" >
+  
+  <div class="final-prova">
+    <h6>Atribua valor à sua marca <br> com o Design</h6>
+    <p>Vamos construir uma identidade visual sólida que vai <br> impulsionar seu negócio.</p>
+         <a href="/contato"><button class="design-button">Comece seu Design</button></a>
+  </div>
+
+  <div class="final-prova-direita" >
+    <img src="{{ url_for('static', filename='img/logo2.avif') }}" alt="logo" >
+    <p> O sucesso é nítido.</p>
+  </div>
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+{% include "footer.html" %}
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </div>
+</body>
+</html>
