@@ -1705,7 +1705,7 @@ height: 100%;
 
 .descricao-projeto {
     margin-left: 340px;
-    margin-top:  75px;
+    margin-top:  0px;
         font-size: 20px;
     font-family: "Neue Haas Display Roman";
     max-width: 6800px; /* Opcional: define uma largura máxima */

@@ -1,0 +1,27 @@
+{
+        "titulo": "Homemvoa",
+        "subtitulo": "Especialista gera especialista.",
+        "local": " São Paulo",
+        "ano": "2024",
+        "descricao": "A Homemvoa é uma agência de marketing digital que faz lançamentos de cursos online para infoprodutores, especialistas em diferentes áreas. A marca traduz o conceito de que o especialista, representado pela asa, é ampliado, suas expertises serão projetadas para serem vistas, notadas. A Lupa possui tanto o entendimento de maximização quanto o de descoberta e estudo. ",
+        "blocos": [
+            { "tipo": "imagem", "src": "/static/projetos_pagina/homemvoa/frame-1.png", "alt": "Logo homemvoa" },
+            { "tipo": "texto2", "": "Conceito", "conteudo": " " },
+            { "tipo": "texto", "titulo": "Naming", "conteudo": "homemvoa" },
+
+            { "tipo": "texto2", "": "Conceito", "conteudo": "Local  •  São Paulo" },
+            { "tipo": "texto2", "": "Conceito", "conteudo": "2024" },
+
+
+            { "tipo": "texto2", "": "Conceito", "conteudo": "Quando criança, Marcos Barros, fundador da empresa, morava em uma favela que era ao lado de um aeroporto, observava os aviões decolando e pousando. E ali seu sonho de ser Piloto foi semeado, ficava fascinado com a possibilidade de voar, de dominar os céus. Em velocidade de cruzeiro ele pilota uma frota de especialistas, como ele, que buscam os céus, o próximo horizonte. Ele tornou real seu sonho através do conhecimento."},
+            { "tipo": "texto2", "": "Conceito", "conteudo": "- Alberto Santos Dummont :"},
+            { "tipo": "texto2", "": "Conceito", "conteudo": "-Urubu voa?... -Abelha voa?... E assim sucessivamente. A cada chamada todos nós devíamos levantar o dedo e responder. Acontecia, porém, que, de vez em quando, alguém anunciava: -Cachorro voa?... -Raposa voa? ... ou algum disparate semelhante, a fim de nos surpreender; se alguém levantasse o dedo, tinha de pagar uma prenda. Meus companheiros não deixavam de piscar o olho e sorrir maliciosamente cada vez que perguntavam: -Homem voa?... Pois cada vez eu erguia o meu dedo bem alto, sinalizando minha certeza absoluta, e me recusava obstinadamente a pagar a prenda. Quanto mais zombavam de mim, mais feliz eu me sentia. Tinha a convicção de que um dia eles estariam do meu lado."},
+            { "tipo": "imagem", "src": "/static/projetos_pagina/wyuka/2.avif", "alt": "Logo Wyuka"}
+
+
+
+            
+
+    ]
+}
+    

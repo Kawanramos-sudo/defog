@@ -11,8 +11,9 @@ app = Flask(__name__)
 
 # Configuração de e-mail (Hostinger)
 app.config['MAIL_SERVER'] = 'smtp.hostinger.com'
-app.config['MAIL_PORT'] = 587
-app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_PORT'] = 465
+app.config['MAIL_USE_TLS'] = False
+app.config['MAIL_USE_SSL'] = True
 app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')  # Ex: contato@defogdesign.com
 app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')  # Senha do e-mail
 
