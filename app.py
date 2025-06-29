@@ -1,7 +1,7 @@
 from flask import Flask, render_template, send_from_directory, request, abort
 from flask_mail import Mail, Message
 import json
-import os
+import os, socket
 import glob
 from dotenv import load_dotenv
 
@@ -9,13 +9,22 @@ load_dotenv()  # Carrega variáveis de ambiente do .env
 
 app = Flask(__name__)
 
-# Configuração de e-mail (Hostinger)
+# Forçar IPv4
+original_getaddrinfo = socket.getaddrinfo
+def getaddrinfo_ipv4(*args, **kwargs):
+    return [info for info in original_getaddrinfo(*args, **kwargs) if info[0] == socket.AF_INET]
+socket.getaddrinfo = getaddrinfo_ipv4
+
+load_dotenv()
+
+app = Flask(__name__)
 app.config['MAIL_SERVER'] = 'smtp.hostinger.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
-app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')  # Ex: contato@defogdesign.com
-app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')  # Senha do e-mail
+app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')
+app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')
+app.config['MAIL_DEFAULT_SENDER'] = app.config['MAIL_USERNAME']
 
 mail = Mail(app)
 
