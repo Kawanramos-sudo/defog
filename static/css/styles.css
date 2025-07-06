@@ -33,6 +33,10 @@ body {
     padding: 0px;
 }
 
+.imagem-mobile img {
+    display: none;
+}
+
 header {
         padding-bottom: 0;
     transition: max-height 0.6s ease, padding 0.6s ease;
@@ -658,6 +662,20 @@ nav {
 
 @media (max-width: 960px) {
 
+    .imagem img{
+
+
+        display: none;
+    }
+
+    .imagem-mobile img{
+
+display: block;
+width: 100%;
+height: auto;
+
+    }
+
 
 .perfil-conteudo p {
     width: 500px;
@@ -770,11 +788,7 @@ nav {
         width: 100%;
     }
 
-    .content {
-    width: 86%;
 
-
-}
     
     .projeto-img-perfil {
         margin: 0;
@@ -1052,6 +1066,9 @@ header.menu-expanded .logo-hamburger {
     }
 
 
+
+
+
     nav.expanded {
         display: flex !important;
         background: transparent !important;
@@ -1233,6 +1250,14 @@ button.btn-contato {
 
 @media (max-width: 768px) {
 
+
+        .imagem-mobile img {
+        display: block;
+        margin: 0 auto;
+    width: 100%;
+    height: auto;
+border-radius: 10px;
+    }
     .contato-conteudo {
         width: 90%; /* ou 95% para mais respiro */
         margin: 30px auto;
@@ -1321,6 +1346,9 @@ button.btn-contato {
         height: 40px;
         padding: 10px;
     }
+
+
+
 }
 @media (max-width: 600px) {
 
@@ -1378,15 +1406,7 @@ button.btn-contato {
   max-width: 1300px; /* Opcional: para limitar no desktop */
 }
 
-.depoimento-img {
-  width: 465px;
-          caret-color: transparent; /* Oculta o cursor */
 
-  height: 575px; /* ou outro valor que funcione bem no layout */
-  border-radius: 10px;
-  object-fit: cover; /* Mantém proporção e corta o excesso */
-  flex-shrink: 0; /* Impede de encolher */
-}
 
 
 .descricao {
@@ -1497,22 +1517,9 @@ font-size: 35px;
 
           }
 
-  .Depoimentos-pai {
-    width: 75%;
-    padding: 0 0px;
-  }
 
-  .Depoimento {
-    flex-direction: column; /* Empilha a imagem e o texto */
-    align-items: center;
-    gap: 15px;
-  }
 
-  .depoimento-img {
-    width: 100%;
-    height: auto; /* Mantém proporção */
-    max-height: 400px; /* Limita altura para não esticar demais */
-  }
+
 
   .descricao {
     margin: 0;
@@ -1558,13 +1565,7 @@ display: none;
 }
 
 
-@media (min-width: 640px) and (max-width: 768px) {
-  .depoimento-img {
-    width: 90%;
-    height: auto; /* Mantém proporção */
-    max-height: 500px; /* Limita altura para não esticar demais */
-  }
-}
+
 
 
 
@@ -1593,6 +1594,12 @@ display: none;
 
   }
 
+.Depoimento img {
+
+
+    height: 100%;
+    width: 50%;
+}
 
 
 
@@ -1630,12 +1637,7 @@ display: none;
 }
 
 
-  .depoimento-img {
-    margin-left: 20px;
-    width: 40%;
-    height: auto; /* Mantém proporção */
-    max-height: 790px; /* Limita altura para não esticar demais */
-  }
+
 }
 
 html {
@@ -1948,14 +1950,20 @@ border-radius: 10px;
 
 /* 1) Telas menores que 1200px (ex.: laptops grandes) */
 @media (max-width: 1200px) {
+
+.content{
+
+    width: 900px;
+}
+
     /* Diminui o gap do .projeto-inicio e ajusta margens */
     .projeto-inicio {
         gap: 20px;
     }
 
     .descricao-projeto {
-        margin-left: 260px; /* Reduz o deslocamento lateral */
-        margin-top: 60px;
+        margin-left: 160px; /* Reduz o deslocamento lateral */
+        margin-top: 0px;
         font-size: 18px;
     }
 
@@ -1983,10 +1991,17 @@ border-radius: 10px;
         width: 200px;
         height: 180px;
     }
+
+    .descricao {
+
+
+        margin-top: 0;
+    }
 }
 
 /* 2) Telas menores que 992px (tablets paisagem e alguns notebooks) */
 @media (max-width: 992px) {
+
 
 
     .perfil-conteudo p{
@@ -2056,11 +2071,9 @@ border-radius: 10px;
         height: 30px;
     }
 
-.projeto-inicio, .imagem, .texto, .video, .carrossel-container, .fim-projetos {
+.content {
 
-margin-left: 100px;
-margin-right: 100px;
-
+    width: 780px;
 }
 
 
@@ -2074,12 +2087,57 @@ margin-right: 100px;
 /* 3) Telas menores que 768px (tablets em modo retrato e smartphones grandes) */
 @media (max-width: 768px) {
 
+.content {
+
+
+    width: 650px;
+}
+
+  .Depoimentos-pai {
+    width: 80%;             /* Ocupa toda a largura da tela */
+    padding: 0 15px;         /* Dá um respiro nas bordas */
+    box-sizing: border-box;  /* Garante que o padding não estoure o layout */
+    align-items: center;     /* Centraliza os depoimentos filhos */
+  }
+
+  .Depoimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+
+  .depoimento-img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+      border-radius: 10px;
+
+  }
+
+  .descricao {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .Depoimentos-titulo h1 {
+    font-size: 28px;
+  }
+
     .projeto-inicio, .imagem, .texto, .video, .carrossel-container, .fim-projetos {
 
 margin-left: 0px;
 margin-right: 0px;
 
+
+
+
 }
+
+
 
 
 .titulo-projeto{
@@ -2143,8 +2201,7 @@ margin-right: 0px;
     }
 
     .imagem img {
-        width: 100%;
-        max-width: 700px;
+         display: none;
     }
 
     .texto p {
@@ -2159,13 +2216,15 @@ margin-right: 0px;
 
     /* Carrossel: itens menores e setas mais discretas */
     .projeto {
-        width: 140px;
-        height: 160px;
+        margin-left: 30px;
+        margin-right: 30px;
+        width: 120px;
+        height: 110px;
     }
  
 
     .carrossel-container{
-        padding: 0;
+        padding: 0px;
     }
 
     .carrossel-seta {
@@ -2208,12 +2267,19 @@ margin-right: 0px;
 
 /* 4) Telas menores que 480px (smartphones) */
 @media (max-width: 480px) {
+    
 
 .projeto-inicio, .imagem, .texto, .video, .carrossel-container, .fim-projetos {
 
 margin-left: 0px;
 margin-right: 0px;
 
+}
+
+.content {
+
+
+    width: 290px;
 }
 
 
@@ -2314,4 +2380,18 @@ margin-right: 0px;
         opacity: 0;
         transform: translateY(-20px);
     }
+}
+
+@media (width: 768px) {
+
+
+
+ .imagem img{
+
+    display: none;
+    margin-left: 0;
+    margin-right: 0;
+ }
+
+
 }

@@ -1,0 +1,25 @@
+{
+        "titulo": "TÍTULO DO PROJETO",
+        "subtitulo": "Subtítulo aqui",
+        "local": "Local aqui",
+        "ano": "1888",
+        "descricao": "Descriasdaqsdasdasdasdasdasdasdasdção aqui.",
+        "blocos": [
+            { "tipo": "imagem", "src": "/static/projetos_pagina/modelo/modelo.jpg", "alt": "nome_modelo" },
+            { "tipo": "texto", "titulo": "Conceito", "conteudo": "modelo" },
+
+            { "tipo": "texto2", "conteudo": "Local  •  Rio de Janeiro" },
+            { "tipo": "texto2", "conteudo": "2020" },
+
+
+            { "tipo": "texto2", "conteudo": "texto." },
+            { "tipo": "imagem", "src": "/static/projetos_pagina/modelo/modelo.jpg", "alt": "nome_modelo"},
+            { "tipo": "imagem_mobile", "src": "/static/projetos_pagina/modelo/mobile/modelo_mobile.jpg", "alt": "Imagem exclusiva do mobile" }
+
+
+
+
+            
+
+    ]
+}

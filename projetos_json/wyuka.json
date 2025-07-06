@@ -13,7 +13,9 @@
 
 
             { "tipo": "texto2", "": "Conceito", "conteudo": "As sobrancelhas moldam nossos traços mais característicos no rosto, visto isso a tipografia desenvolvida para o nome da designer ressalta a estética feminina, sinuosidade e leveza, ao mesmo tempo em que contempla a forma de uma sobrancelha.   " },
-            { "tipo": "imagem", "src": "/static/projetos_pagina/wyuka/2.avif", "alt": "Logo Wyuka"}
+            { "tipo": "imagem", "src": "/static/projetos_pagina/wyuka/2.avif", "alt": "Logo Wyuka"},
+            { "tipo": "imagem_mobile", "src": "/static/projetos_pagina/wyuka/mobile.jpg", "alt": "Imagem exclusiva do mobile" }
+
 
 
 

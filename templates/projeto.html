@@ -35,6 +35,13 @@
             </div>
         {% endif %}
 
+        {% if bloco.tipo == 'imagem_mobile' %}
+    <div class="imagem-mobile">
+        <img src="{{ bloco.src }}" alt="{{ bloco.alt }}">
+    </div>
+{% endif %}
+
+
         {# Se o bloco for um texto #}
         {% if bloco.tipo == 'texto' %}
             <div class="texto">
