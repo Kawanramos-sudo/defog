@@ -661,6 +661,11 @@ nav {
 
 
 @media (max-width: 960px) {
+.content{
+
+    width: 450px;
+}
+
 
     .imagem img{
 
@@ -2090,7 +2095,7 @@ border-radius: 10px;
 .content {
 
 
-    width: 650px;
+    width: 550px;
 }
 
   .Depoimentos-pai {

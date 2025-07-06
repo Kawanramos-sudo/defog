@@ -3,7 +3,7 @@
         "subtitulo": "Subtítulo aqui",
         "local": "Local aqui",
         "ano": "1888",
-        "descricao": "Descriasdaqsdasdasdasdasdasdasdasdção aqui.",
+        "descricao": "Descrição aqui.",
         "blocos": [
             { "tipo": "imagem", "src": "/static/projetos_pagina/modelo/modelo.jpg", "alt": "nome_modelo" },
             { "tipo": "texto", "titulo": "Conceito", "conteudo": "modelo" },
